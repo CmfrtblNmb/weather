@@ -1,44 +1,41 @@
-package com.example.scrapingdemo;
+package com.example.scrapingdemo.weatherDTO;
 
 public class Weather {
-
-    private String City;
-    private String Day;
+    private String city;
+    private String day;
     private double temperature;
-    private  String summary;
+    private String summary;
+
 
     public Weather(String city, String day, double temperature, String summary) {
-        City = city;
-        Day = day;
+        this.city = city;
+        this.day = day;
         this.temperature = temperature;
         this.summary = summary;
     }
 
-
     public Weather(String city, String day) {
-        City = city;
-        Day = day;
+        this.city = city;
+        this.day = day;
     }
 
     public Weather() {
-
-
     }
 
     public String getCity() {
-        return City;
+        return city;
     }
 
     public void setCity(String city) {
-        City = city;
+        this.city = city;
     }
 
-    public  String getDay() {
-        return Day;
+    public String getDay() {
+        return day;
     }
 
     public void setDay(String day) {
-        Day = day;
+        this.day = day;
     }
 
     public double getTemperature() {
